@@ -1,0 +1,10 @@
+[package]
+name = "tribble"
+version = "0.1.0"
+authors = ["ahnanne <54733637+ahnanne@users.noreply.github.com>"]
+description = "tribble"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/ahnanne/tribble"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

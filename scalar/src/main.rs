@@ -19,4 +19,10 @@ fn main() {
 
     let remainder = 20 % 3;
     println!("{}", remainder); // 2
+
+    /* char 타입 */
+    let mut example = 'a';
+    println!("{} b c d e...", example); // a b c d e...
+    example = '😻';
+    println!("{}: 야옹~", example); // 😻: 야옹~
 }

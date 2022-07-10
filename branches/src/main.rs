@@ -1,9 +1,9 @@
 use std::io;
 
 fn main() {
-    let mut input_number: String = String::new(); // creates a new empty String
-
     loop {
+        let mut input_number: String = String::new(); // creates a new empty String
+        println!("input_number = {}", input_number);
         println!("숫자를 입력해주세요!");
         io::stdin()
             .read_line(&mut input_number)

@@ -20,7 +20,18 @@ fn main() {
         } else {
             println!("입력하신 값이 5보다 크거나 같네요!");
         }
-        println!("안녕히 가세요!");
+
+        // [if 표현식의 결과를 변수에 대입하기]
+        // if 표현식은 표현식이기 때문에 let 구문의 오른쪽에 사용하는 것도 가능하다.
+        // 이때 if 구문의 각 가지가 반환하는 값은 모두 같은 타입이어야 한다.
+        let result = if input_number < 5 {
+            '🐱'
+        } else {
+            '🐶'
+        };
+
+        println!("결과 : {}", result);
+
         break;
     }
 }

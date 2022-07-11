@@ -24,4 +24,18 @@ fn main() {
         let random_number: i32 = rand::thread_rng().gen_range(1..100);
         println!("{}", random_number);
     }
+
+    // * for -> 배열 같은 컬렉션 내의 요소들을 반복해서 처리해야 할 때 유용
+    let aespa = ["Karina", "Giselle", "Winter", "NingNing"];
+
+    for member in aespa.iter() {
+        println!("나의 최애 멤버는 {}", member);
+    }
+    // while문을 사용해서 구현하는 것보다 안전성이 높고, 버그를 사전에 방지할 수 있다.
+
+    // Range 타입 (지정한 범위의 값들을 생성해주는 타입)
+    for count_down_number in (1..4).rev() {
+        println!("{}!", count_down_number);
+    }
+    println!("{}", '🚀');
 }

@@ -1,4 +1,5 @@
 use rand::Rng;
+mod sing_a_song;
 
 // Rust가 제공하는 루프의 종류: loop, while, for
 
@@ -38,4 +39,7 @@ fn main() {
         println!("{}!", count_down_number);
     }
     println!("{}", '🚀');
+
+    // 🎶
+    sing_a_song::twelve_days_of_christmas();
 }

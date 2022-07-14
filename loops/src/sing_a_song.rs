@@ -11,12 +11,36 @@ pub fn twelve_days_of_christmas() {
         "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth",
         "tenth", "eleventh", "twelfth",
     ];
+    let gitfts = [
+        "A partridge in a pear tree",
+        "Two turtledoves",
+        "Three French hens",
+        "Four calling birds",
+        "Five gold rings (five golden rings)",
+        "Six geese a-laying",
+        "Seven swans a-swimming",
+        "Eight maids a-milking",
+        "Nine ladies dancing",
+        "Ten lords a-leaping",
+        "Eleven pipers piping",
+        "Twelve drummers drumming",
+    ];
 
+    let mut count = 0;
     for c in stdin.keys() {
         if c.unwrap() == Key::Down {
-            println!("test");
+            println!(
+                "On the {} day of Christmas, my true love 💗 sent to me",
+                orders[count]
+            );
+            for i in (0..count + 1).rev() {
+                println!("{}", gitfts[i]);
+            }
+            count += 1;
         }
-        break;
+        if count == 12 {
+            break;
+        }
     }
 }
 
